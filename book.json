@@ -1,0 +1,70 @@
+{
+    "title": "备考硕士笔记",
+    "author": "于志远",
+    "description" : "记录考研备考复习中的知识点",
+    "language" : "zh-hans",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "-highlight",
+        "prism",
+        "search-plus",
+        "-sharing", "sharing-plus",
+        "simple-page-toc",
+        "emphasize",
+        "graph",
+        "expandable-chapters-small",
+        "anchors",
+        "splitter",
+        "ace",
+        "copy-code-button",
+        "anchor-navigation-ex",
+        "mathjax",
+        "autotheme",
+        "github"
+    ],
+    "pluginsConfig": {
+        "page-toc": {
+            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+            "position": "before-first",
+            "showByDefault": true
+        },
+        "fontSettings": {
+            "family": "serif",
+            "size": 1
+        },
+        "autotheme": {
+            "white": [9, 10, 11, 12, 13, 14, 15, 16, 17],
+            "sepia": [6, 7, 8, 18, 19],
+            "night": [20, 21, 22, 23, 0, 1, 2, 3, 4, 5]
+        },
+        "disqus": {
+            "shortName": ""
+        },
+        "github": {
+            "url": "https://github.com/SmartLyu/LearnForDegree"
+        },
+        "sharing": {
+           "facebook": true,
+           "twitter": true,
+           "google": true,
+           "qq": true,
+           "qzone": true,
+           "weibo": true,
+           "all": [
+               "facebook", "messenger",  "google", "twitter",
+               "weibo", "qq", "linkedin", "qzone" , "line"
+           ]
+       },
+       "anchor-navigation-ex": {
+           "multipleH1": false,
+           "showLevel": false,
+           "float": {
+               "floatIcon": "fa fa-navicon",
+               "level1Icon": "fa fa-hand-o-right",
+               "level2Icon": "fa fa-hand-o-right",
+               "level3Icon": "fa fa-hand-o-right"
+           }
+       }
+    }
+}
