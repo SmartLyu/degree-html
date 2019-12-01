@@ -3,6 +3,9 @@
     "author": "于志远",
     "description" : "记录考研备考复习中的知识点",
     "language" : "zh-hans",
+    "styles": {
+        "website": "styles/website.css"
+    },
     "plugins": [
         "-lunr",
         "-search",
