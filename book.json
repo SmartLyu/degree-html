@@ -10,6 +10,8 @@
         "-lunr",
         "-search",
         "-highlight",
+        "code",
+        "click-reveal",
         "prism",
         "search-plus",
         "-sharing", "sharing-plus",
