@@ -830,7 +830,7 @@ Status <span class="token function">ClearList</span><span class="token punctuati
 </li>
 <li><p>&#x67E5;&#x627E;</p>
 <pre class="language-"><code class="lang-cpp"><span class="token comment">//&#x5728;&#x7EBF;&#x6027;&#x8868; L &#x4E2D;&#x67E5;&#x627E;&#x503C;&#x4E3A; e &#x7684;&#x6570;&#x636E;&#x5143;&#x7D20;&#x5730;&#x5740;&#xFF0C;&#x8FD4;&#x56DE; L &#x4E2D;&#x503C;&#x4E3A; e &#x7684;&#x6570;&#x636E;&#x5143;&#x7D20;&#x7684;&#x5730;&#x5740;,&#x67E5;&#x627E;&#x5931;&#x8D25;&#x8FD4;&#x56DE; NULL</span>
-LNode <span class="token operator">*</span>LocateELem_L <span class="token punctuation">(</span>LinkList L<span class="token punctuation">,</span>Elemtype e<span class="token punctuation">)</span> 
+LNode <span class="token operator">*</span><span class="token function">LocateELem_L</span> <span class="token punctuation">(</span>LinkList L<span class="token punctuation">,</span>Elemtype e<span class="token punctuation">)</span> 
 <span class="token punctuation">{</span>
     p<span class="token operator">=</span>L<span class="token operator">-&gt;</span>next<span class="token punctuation">;</span>
     <span class="token keyword">while</span><span class="token punctuation">(</span>p <span class="token operator">&amp;&amp;</span>p<span class="token operator">-&gt;</span>data<span class="token operator">!=</span>e<span class="token punctuation">)</span> 
@@ -839,7 +839,7 @@ LNode <span class="token operator">*</span>LocateELem_L <span class="token punct
 <span class="token punctuation">}</span>
 
 <span class="token comment">//&#x5728;&#x7EBF;&#x6027;&#x8868; L &#x4E2D;&#x67E5;&#x627E;&#x503C;&#x4E3A; e &#x7684;&#x6570;&#x636E;&#x5143;&#x7D20;&#x5E8F;&#x53F7;&#xFF0C;&#x8FD4;&#x56DE; L &#x4E2D;&#x503C;&#x4E3A; e &#x7684;&#x6570;&#x636E;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x5E8F;&#x53F7;,&#x67E5;&#x627E;&#x5931;&#x8D25;&#x8FD4;&#x56DE; 0</span>
-<span class="token keyword">int</span> LocateELem_L <span class="token punctuation">(</span>LinkList L<span class="token punctuation">,</span>Elemtype e<span class="token punctuation">)</span> 
+<span class="token keyword">int</span> <span class="token function">LocateELem_L</span> <span class="token punctuation">(</span>LinkList L<span class="token punctuation">,</span>Elemtype e<span class="token punctuation">)</span> 
 <span class="token punctuation">{</span>
     p<span class="token operator">=</span>L<span class="token operator">-&gt;</span>next<span class="token punctuation">;</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
     <span class="token keyword">while</span><span class="token punctuation">(</span>p <span class="token operator">&amp;&amp;</span>p<span class="token operator">-&gt;</span>data<span class="token operator">!=</span>e<span class="token punctuation">)</span>
@@ -1231,7 +1231,7 @@ Status <span class="token function">StackEmpty</span><span class="token punctuat
 </code></pre>
 </li>
 <li><p>&#x51FA;&#x6808;</p>
-<pre class="language-"><code class="lang-cpp">Status Pop <span class="token punctuation">(</span>LinkStack <span class="token operator">&amp;</span>S<span class="token punctuation">,</span>SElemType <span class="token operator">&amp;</span>e<span class="token punctuation">)</span>
+<pre class="language-"><code class="lang-cpp">Status <span class="token function">Pop</span> <span class="token punctuation">(</span>LinkStack <span class="token operator">&amp;</span>S<span class="token punctuation">,</span>SElemType <span class="token operator">&amp;</span>e<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>S<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token keyword">return</span> ERROR<span class="token punctuation">;</span>
     e <span class="token operator">=</span> S<span class="token operator">-&gt;</span> data<span class="token punctuation">;</span>
@@ -1305,7 +1305,7 @@ x<span class="token operator">=</span>base<span class="token punctuation">[</spa
 </li>
 <li><p>&#x5FAA;&#x73AF;&#x961F;&#x5217;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</p>
 <pre class="language-"><code class="lang-cpp"><span class="token comment">// &#x521D;&#x59CB;&#x5316;</span>
-Status InitQueue <span class="token punctuation">(</span>SqQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
+Status <span class="token function">InitQueue</span> <span class="token punctuation">(</span>SqQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
     Q<span class="token punctuation">.</span>base <span class="token operator">=</span><span class="token keyword">new</span> QElemType<span class="token punctuation">[</span>MAXQSIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>Q<span class="token punctuation">.</span>base<span class="token punctuation">)</span> 
         <span class="token function">exit</span><span class="token punctuation">(</span>OVERFLOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1314,7 +1314,7 @@ Status InitQueue <span class="token punctuation">(</span>SqQueue <span class="to
 <span class="token punctuation">}</span>
 
 <span class="token comment">// &#x957F;&#x5EA6;(&#x53EF;&#x80FD;rear&#x9976;&#x4E86;&#x4E00;&#x5708;&#x5728;front&#x540E;&#x9762;)</span>
-<span class="token keyword">int</span> QueueLength <span class="token punctuation">(</span>SqQueue Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token keyword">int</span> <span class="token function">QueueLength</span> <span class="token punctuation">(</span>SqQueue Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>Q<span class="token punctuation">.</span>rear<span class="token operator">-</span>Q<span class="token punctuation">.</span>front<span class="token operator">+</span>MAXQSIZE<span class="token punctuation">)</span><span class="token operator">%</span>MAXQSIZE<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
@@ -1339,7 +1339,7 @@ M<span class="token operator">-</span><span class="token number">1</span>
 </code></pre>
 </li>
 <li><p>&#x5FAA;&#x73AF;&#x961F;&#x5217;&#x7684;&#x51FA;&#x961F;</p>
-<pre class="language-"><code class="lang-cpp">Status DeQueue <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">,</span>QElemType <span class="token operator">&amp;</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<pre class="language-"><code class="lang-cpp">Status <span class="token function">DeQueue</span> <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">,</span>QElemType <span class="token operator">&amp;</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span>Q<span class="token punctuation">.</span>front<span class="token operator">==</span>Q<span class="token punctuation">.</span>rear<span class="token punctuation">)</span>      <span class="token comment">// &#x961F;&#x7A7A;</span>
         <span class="token keyword">return</span> ERROR<span class="token punctuation">;</span>
     e<span class="token operator">=</span>Q<span class="token punctuation">.</span>base<span class="token punctuation">[</span>Q<span class="token punctuation">.</span>front<span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -1365,7 +1365,7 @@ M<span class="token operator">-</span><span class="token number">1</span>
 </li>
 <li><p>&#x57FA;&#x672C;&#x64CD;&#x4F5C;</p>
 <pre class="language-"><code class="lang-cpp"><span class="token comment">// &#x521D;&#x59CB;&#x5316;</span>
-Status InitQueue <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
+Status <span class="token function">InitQueue</span> <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
     Q<span class="token punctuation">.</span>front<span class="token operator">=</span>Q<span class="token punctuation">.</span>rear<span class="token operator">=</span><span class="token punctuation">(</span>QueuePtr<span class="token punctuation">)</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>QNode<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>Q<span class="token punctuation">.</span>front<span class="token punctuation">)</span> 
         <span class="token function">exit</span><span class="token punctuation">(</span>OVERFLOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1374,7 +1374,7 @@ Status InitQueue <span class="token punctuation">(</span>LinkQueue <span class="
 <span class="token punctuation">}</span>
 
 <span class="token comment">// &#x9500;&#x6BC1;&#x961F;&#x5217;</span>
-Status DestroyQueue <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
+Status <span class="token function">DestroyQueue</span> <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">while</span><span class="token punctuation">(</span>Q<span class="token punctuation">.</span>front<span class="token punctuation">)</span><span class="token punctuation">{</span>
         Q<span class="token punctuation">.</span>rear<span class="token operator">=</span>Q<span class="token punctuation">.</span>front<span class="token operator">-&gt;</span>next<span class="token punctuation">;</span>
         <span class="token function">free</span><span class="token punctuation">(</span>Q<span class="token punctuation">.</span>front<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1384,12 +1384,12 @@ Status DestroyQueue <span class="token punctuation">(</span>LinkQueue <span clas
 <span class="token punctuation">}</span>
 
 <span class="token comment">// &#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x7A7A;</span>
-Status QueueEmpty <span class="token punctuation">(</span>LinkQueue Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
+Status <span class="token function">QueueEmpty</span> <span class="token punctuation">(</span>LinkQueue Q<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>Q<span class="token punctuation">.</span>front<span class="token operator">==</span>Q<span class="token punctuation">.</span>rear<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">// &#x83B7;&#x53D6;&#x961F;&#x5934;&#x5143;&#x7D20;</span>
-Status GetHead <span class="token punctuation">(</span>LinkQueue Q<span class="token punctuation">,</span> QElemType<span class="token operator">&amp;</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+Status <span class="token function">GetHead</span> <span class="token punctuation">(</span>LinkQueue Q<span class="token punctuation">,</span> QElemType<span class="token operator">&amp;</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span>Q<span class="token punctuation">.</span>front<span class="token operator">==</span>Q<span class="token punctuation">.</span>rear<span class="token punctuation">)</span> <span class="token keyword">return</span> ERROR<span class="token punctuation">;</span>
     e<span class="token operator">=</span>Q<span class="token punctuation">.</span>front<span class="token operator">-&gt;</span>next<span class="token operator">-&gt;</span>data<span class="token punctuation">;</span>
     <span class="token keyword">return</span> OK<span class="token punctuation">;</span>
@@ -1410,7 +1410,7 @@ Status GetHead <span class="token punctuation">(</span>LinkQueue Q<span class="t
 </code></pre>
 </li>
 <li><p>&#x51FA;&#x961F;</p>
-<pre class="language-"><code class="lang-cpp">Status DeQueue <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">,</span>QElemType <span class="token operator">&amp;</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<pre class="language-"><code class="lang-cpp">Status <span class="token function">DeQueue</span> <span class="token punctuation">(</span>LinkQueue <span class="token operator">&amp;</span>Q<span class="token punctuation">,</span>QElemType <span class="token operator">&amp;</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span>Q<span class="token punctuation">.</span>front<span class="token operator">==</span>Q<span class="token punctuation">.</span>rear<span class="token punctuation">)</span> 
         <span class="token keyword">return</span> ERROR<span class="token punctuation">;</span>
     p<span class="token operator">=</span>Q<span class="token punctuation">.</span>front<span class="token operator">-&gt;</span>next<span class="token punctuation">;</span>
@@ -1523,7 +1523,7 @@ Status GetHead <span class="token punctuation">(</span>LinkQueue Q<span class="t
 </li>
 <li><p>&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;</p>
 <pre class="language-"><code class="lang-cpp"><span class="token comment">// T[0] &#x5B58;&#x653E;&#x4E32;&#x957F;&#x5EA6;</span>
-<span class="token keyword">int</span> Index_BF <span class="token punctuation">(</span>SString S<span class="token punctuation">,</span>SString T<span class="token punctuation">,</span> <span class="token keyword">int</span> pos<span class="token punctuation">)</span>
+<span class="token keyword">int</span> <span class="token function">Index_BF</span> <span class="token punctuation">(</span>SString S<span class="token punctuation">,</span>SString T<span class="token punctuation">,</span> <span class="token keyword">int</span> pos<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     i<span class="token operator">=</span> pos<span class="token punctuation">,</span>j <span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
     <span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token operator">&lt;=</span>S<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> j<span class="token operator">&lt;=</span>T<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1599,7 +1599,7 @@ Status GetHead <span class="token punctuation">(</span>LinkQueue Q<span class="t
 <p>&#x6362;&#x53E5;&#x8BDD;&#x8BF4;,&#x6B64;&#x65F6;&#x7684;next[j]&#x5E94;&#x548C; next[k]&#x76F8;&#x540C;&#x3002;</p>
 </li>
 <li><p>&#x7B97;&#x6CD5;</p>
-<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> Index_KMP <span class="token punctuation">(</span>SString S<span class="token punctuation">,</span>SString T<span class="token punctuation">,</span> <span class="token keyword">int</span> pos<span class="token punctuation">)</span>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> <span class="token function">Index_KMP</span> <span class="token punctuation">(</span>SString S<span class="token punctuation">,</span>SString T<span class="token punctuation">,</span> <span class="token keyword">int</span> pos<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     i<span class="token operator">=</span> pos<span class="token punctuation">;</span>
     j <span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
@@ -1770,7 +1770,7 @@ R={r}
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据结构","level":"1.5.2","depth":2,"next":{"title":"操作系统","level":"1.5.3","depth":2,"path":"CS/operating-system.md","ref":"CS/operating-system.md","articles":[]},"previous":{"title":"计算机组成原理","level":"1.5.1","depth":2,"path":"CS/Computer-composition-principle.md","ref":"CS/Computer-composition-principle.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","code","click-reveal","prism","search-plus","-sharing","sharing-plus","simple-page-toc","emphasize","graph","expandable-chapters-small","anchors","splitter","ace","copy-code-button","anchor-navigation-ex","mathjax","autotheme","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":""},"emphasize":{},"ace":{},"github":{"url":"https://github.com/SmartLyu/LearnForDegree"},"simple-page-toc":{},"splitter":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"graph":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":1},"click-reveal":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"mathjax":{"forceSVG":false,"version":"2.7.6"},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[20,21,22,23,0,1,2,3,4,5],"sepia":[6,7,8,18,19,19],"white":[9,10,11,12,13,14,15,16,17]},"sharing":{"facebook":true,"twitter":true,"google":true,"qq":true,"qzone":true,"weibo":true,"all":["facebook","messenger","google","twitter","weibo","qq","linkedin","qzone","line"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"于志远","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"备考硕士笔记","language":"zh-hans","gitbook":"*","description":"记录考研备考复习中的知识点"},"file":{"path":"CS/data-structure.md","mtime":"2020-05-22T10:28:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-22T10:28:11.055Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据结构","level":"1.5.2","depth":2,"next":{"title":"操作系统","level":"1.5.3","depth":2,"path":"CS/operating-system.md","ref":"CS/operating-system.md","articles":[]},"previous":{"title":"计算机组成原理","level":"1.5.1","depth":2,"path":"CS/Computer-composition-principle.md","ref":"CS/Computer-composition-principle.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","code","click-reveal","prism","search-plus","-sharing","sharing-plus","simple-page-toc","emphasize","graph","expandable-chapters-small","anchors","splitter","ace","copy-code-button","anchor-navigation-ex","mathjax","autotheme","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":""},"emphasize":{},"ace":{},"github":{"url":"https://github.com/SmartLyu/LearnForDegree"},"simple-page-toc":{},"splitter":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"graph":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":1},"click-reveal":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[20,21,22,23,0,1,2,3,4,5],"sepia":[6,7,8,18,19,19],"white":[9,10,11,12,13,14,15,16,17]},"sharing":{"facebook":true,"twitter":true,"google":true,"qq":true,"qzone":true,"weibo":true,"all":["facebook","messenger","google","twitter","weibo","qq","linkedin","qzone","line"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"于志远","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"备考硕士笔记","language":"zh-hans","gitbook":"*","description":"记录考研备考复习中的知识点"},"file":{"path":"CS/data-structure.md","mtime":"2020-05-25T08:58:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-25T08:58:58.189Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1820,7 +1820,7 @@ R={r}
         
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         
     
         
