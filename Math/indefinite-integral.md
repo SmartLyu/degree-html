@@ -3,12 +3,33 @@
 ## 考点
 
 1. 记忆常用积分！！
+
 2. 分式形积分，上下同除
+
 3. 对$$\int f(\sin{x},\cos{x})dx$$类型题目求极限
    1. $$f(-\sin{x},\cos{x})=-f(\sin{x},\cos{x})$$，凑$$d(\cos{x})$$
    2. $$f(\sin{x},-\cos{x})=-f(\sin{x},\cos{x})$$，凑$$d(\sin{x})$$
    3. $$f(-\sin{x},-\cos{x})=f(\sin{x},\cos{x})$$，凑$$d(\tan{x})$$
-4. ...
+   
+4. 不定积分计算完成后，有+C这个结尾
+
+5. * 凑微分![image-20200704232942326](https://smartlyu.github.io/degree-html/images/image-20200704232942326.png)
+
+   * 两类不同函数相乘的积分 -> 分布积分
+
+     出现分式，分子上加一减一，这样可以分成两个简单的积分
+
+   * 对$$\int f(\sin{x},\cos{x})dx$$类型题目求极限  -> 凑微分
+
+     1. $$f(-\sin{x},\cos{x})=-f(\sin{x},\cos{x})$$，凑$$d(\cos{x})$$
+     2. $$f(\sin{x},-\cos{x})=-f(\sin{x},\cos{x})$$，凑$$d(\sin{x})$$
+     3. $$f(-\sin{x},-\cos{x})=f(\sin{x},\cos{x})$$，凑$$d(\tan{x})$$
+
+   * 有根式的函数 -> 三角换元、整体换元
+
+   * 分式中，分子分母的指数差距较大  -> 倒代还
+
+6. ...
 
 ## 不定积分的概念及存在性
 
@@ -55,25 +76,28 @@ $$\int{(\frac{1}{x(1+x)})} = \int{\frac{1}{x}}-\int{\frac{1}{x+1}} = \ln|\frac{x
       \int(\frac{1}{x^4+1})dx=\frac{\int(\frac{x^2+1}{x^4+1})dx - \int(\frac{x^2-1}{x^4+1})dx }{2} = ....
       $$
       
-
-   2. 对$$\int f(\sin{x},\cos{x})dx$$类型题目求极限
-
-      1. $$f(-\sin{x},\cos{x})=-f(\sin{x},\cos{x})$$，凑$$d(\cos{x})$$
+2. 对$$\int f(\sin{x},\cos{x})dx$$类型题目求极限
+   
+   1. $$f(-\sin{x},\cos{x})=-f(\sin{x},\cos{x})$$，凑$$d(\cos{x})$$
       2. $$f(\sin{x},-\cos{x})=-f(\sin{x},\cos{x})$$，凑$$d(\sin{x})$$
       3. $$f(-\sin{x},-\cos{x})=f(\sin{x},\cos{x})$$，凑$$d(\tan{x})$$
-
-      * $$
+   
+   * $$
         \int{\frac{1}{1+\sin^2x}}dx =\int {\frac{1}{2\sin^2x+\cos^2x}}dx \\
         =\int {\frac{1}{2\tan^2x+1}}d(\tan{x}) = ...
         $$
-
-   3. ...
-
+   
+3. ...
+   
 2. 换元法
 
    ![image-20200702175652250](https://smartlyu.github.io/degree-html/images/image-20200702175652250.png)
 
-   
+3. 分布积分
 
-3. ...
+   ![image-20200704230807127](https://smartlyu.github.io/degree-html/images/image-20200704230807127.png)
+
+   反、对、幂、三、指 这个顺序去做参数u，即不动的模块。
+
+4. ...
 
