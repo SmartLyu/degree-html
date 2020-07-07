@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>定积分 · 备考硕士笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="于志远">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Multivariate-differential-equation.html" />
+    
+    
+    <link rel="prev" href="indefinite-integral.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/logo.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/logo.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/logo.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/logo.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/logo.ico">
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Political/">
+            
+                <a href="../Political/">
+            
+                    
+                    政治
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Political/Marxism.html">
+            
+                <a href="../Political/Marxism.html">
+            
+                    
+                    马克思主义基本原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    高数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Limit.html">
+            
+                <a href="Limit.html">
+            
+                    
+                    极限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Derivatives-Integrals.html">
+            
+                <a href="Derivatives-Integrals.html">
+            
+                    
+                    导数与积分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Median-Theorem.html">
+            
+                <a href="Median-Theorem.html">
+            
+                    
+                    微分中值定理和导数应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="indefinite-integral.html">
+            
+                <a href="indefinite-integral.html">
+            
+                    
+                    不定积分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="Definite-integral.html">
+            
+                <a href="Definite-integral.html">
+            
+                    
+                    定积分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Multivariate-differential-equation.html">
+            
+                <a href="Multivariate-differential-equation.html">
+            
+                    
+                    多元微分方程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../English/">
+            
+                <a href="../English/">
+            
+                    
+                    英语
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../English/Dictionary.html">
+            
+                <a href="../English/Dictionary.html">
+            
+                    
+                    词汇集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../English/Remember.html">
+            
+                <a href="../English/Remember.html">
+            
+                    
+                    背诵集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../English/Grammar.html">
+            
+                <a href="../English/Grammar.html">
+            
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../CS/">
+            
+                <a href="../CS/">
+            
+                    
+                    专业
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../CS/Computer-composition-principle.html">
+            
+                <a href="../CS/Computer-composition-principle.html">
+            
+                    
+                    计算机组成原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../CS/data-structure.html">
+            
+                <a href="../CS/data-structure.html">
+            
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../CS/operating-system.html">
+            
+                <a href="../CS/operating-system.html">
+            
+                    
+                    操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../CS/computer-network.html">
+            
+                <a href="../CS/computer-network.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >定积分</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x79EF;&#x5206;"><b></b>&#x5B9A;&#x79EF;&#x5206;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8003;&#x70B9;"><b></b>&#x8003;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;"><b></b>&#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#&#x6027;&#x8D28;"><b></b>&#x6027;&#x8D28;</a></li><ul><li><span class="title-icon "></span><a href="#&#x53EF;&#x79EF;&#x6027;"><b></b>&#x53EF;&#x79EF;&#x6027;</a></li><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x6027;&#x8D28;"><b></b>&#x57FA;&#x672C;&#x6027;&#x8D28;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;"><b></b>&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x8BA1;&#x7B97;"><b></b>&#x8BA1;&#x7B97;</a></li><li><span class="title-icon "></span><a href="#&#x8BC1;&#x660E;&#x9898;"><b></b>&#x8BC1;&#x660E;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x53CD;&#x5E38;&#x79EF;&#x5206;"><b></b>&#x53CD;&#x5E38;&#x79EF;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;"><b></b>&#x5E94;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;"><b></b>&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;</a></li><li><span class="title-icon "></span><a href="#&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;"><b></b>&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;"><b></b>&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;"><b></b>&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;</a></li><li><span class="title-icon "></span><a href="#&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;"><b></b>&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;</a></li><li><span class="title-icon "></span><a href="#&#x7269;&#x7406;&#x5E94;&#x7528;"><b></b>&#x7269;&#x7406;&#x5E94;&#x7528;</a></li></ul></ul></ul></div><a href="#&#x5B9A;&#x79EF;&#x5206;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5B9A;&#x79EF;&#x5206;"><a name="&#x5B9A;&#x79EF;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x79EF;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B9A;&#x79EF;&#x5206;" class="plugin-anchor" href="#&#x5B9A;&#x79EF;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x79EF;&#x5206;</h1>
+<h2 id="&#x8003;&#x70B9;"><a name="&#x8003;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x8003;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8003;&#x70B9;" class="plugin-anchor" href="#&#x8003;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8003;&#x70B9;</h2>
+<ol>
+<li><p><script type="math/tex; ">\int_0^1f(x)dx = \lim_{n \to  \infty}\sum_{i=0}^n{f(\frac{i}{n}) \frac{1}{n}}</script> &#x5FC5;&#x5907;&#x516C;&#x5F0F;</p>
+</li>
+<li><p>&#x5B9A;&#x79EF;&#x5206;&#x5373;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x4E3A;A&#x8FDB;&#x884C;&#x6C42;&#x89E3;</p>
+</li>
+<li><p>&#x5B9A;&#x79EF;&#x5206;&#x7684;&#x51E0;&#x4F55;&#x542B;&#x4E49;&#x662F;&#x9762;&#x79EF;&#xFF0C;&#x5728;x&#x8F74;&#x4E0B;&#x7684;&#x5373;&#x4E3A;&#x8D1F;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x82E5;&#x4E0A;&#x9650;&#x6BD4;&#x4E0B;&#x9650;&#x5C0F;&#x5219;&#x4E5F;&#x7B26;&#x53F7;&#x9700;&#x8981;&#x518D;&#x7F6E;&#x53CD;&#x4E00;&#x6B21;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;&#x5B9A;&#x79EF;&#x5206;&#xFF0C;&#x6C42;&#x65E0;&#x7A77;&#x6570;&#x7EC4;&#x548C;&#x7684;&#x6781;&#x9650;&#xFF1A;<script type="math/tex; ">\int_0^1f(x)dx = \lim_{n \to  \infty}\sum_{i=0}^n{f(\frac{i}{n}) \frac{1}{n}}</script></p>
+</li>
+<li><p>&#x6781;&#x9650;&#x9898;&#x76EE;&#x4E2D;&#xFF0C;&#x6709;&#x51FD;&#x6570;&#x7684;&#x6700;&#x5927;&#x6700;&#x5C0F;&#x503C;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x6027;&#x8D28;&#x51FD;&#x6570;&#x5927;&#x5219;&#x79EF;&#x5206;&#x5927;&#xFF0C;&#x7528;&#x5939;&#x903C;&#x7684;&#x65B9;&#x6CD5;&#x53BB;&#x5B8C;&#x6210;&#x3002;</p>
+</li>
+<li><p>&#x6C42;&#x6781;&#x9650;&#x7684;&#x6700;&#x5927;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x901A;&#x8FC7;&#x6027;&#x8D28;&#xFF0C;&#x6781;&#x9650;&#x662F;&#x5728;<script type="math/tex; ">函数最小值*区间</script> &#x548C; <script type="math/tex; ">数最大值*区间</script>&#x5185;</p>
+</li>
+<li><p>&#x5B9A;&#x79EF;&#x5206;&#x76F4;&#x63A5;&#x6C42;&#x5BFC;&#x7684;&#x524D;&#x63D0;&#x662F;&#xFF0C;&#x51FD;&#x6570;&#x5185;&#x6CA1;&#x6709;&#x79EF;&#x5206;&#x4E0A;&#x4E0B;&#x9650;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x53C2;&#x6570;</p>
+</li>
+<li><p>&#x9488;&#x5BF9;&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x5F80;&#x5F80;&#x6709;&#x4E24;&#x4E2A;&#x5B57;&#x6BCD;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x662F;&#x51FD;&#x6570;&#x7684;&#x81EA;&#x53D8;&#x91CF;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x79EF;&#x5206;&#x4E2D;&#x7684;&#x79EF;&#x5206;&#x53D8;&#x91CF;&#xFF0C;&#x6CE8;&#x610F;&#x5728;&#x79EF;&#x5206;&#x8BA1;&#x7B97;&#x4E2D;&#xFF0C;&#x51FD;&#x6570;&#x7684;&#x81EA;&#x53D8;&#x91CF;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x6570;</p>
+</li>
+<li><p>&#x53D8;&#x9650;&#x6C42;&#x5BFC;&#x4E09;&#x90E8;&#x66F2;&#xFF1A;1. &#x76F4;&#x63A5;&#x6C42;&#x3001;2. &#x6362;&#x5143;&#x6C42;&#x3001;3. &#x63D0;&#x51FA;&#x6C42;&#x3001;4. &#x62C6;&#x5F00;&#x6C42;</p>
+<p>&#x6CE8;&#x610F;&#x6362;&#x5143;&#x6C42;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x8DDF;&#x7740;&#x6362;&#x4E0A;&#x4E0B;&#x9650;&#xFF01;</p>
+</li>
+<li><p><script type="math/tex; ">f(x)</script>&#x8FDE;&#x7EED;&#x4E14;&#x662F;&#x5947;(&#x5076;)&#x51FD;&#x6570;&#xFF0C;&#x5219;<script type="math/tex; ">F(x)=\int_0^xf(t)dt</script> &#x662F;&#x5076;(&#x5947;)&#x51FD;&#x6570;&#xFF0C;&#x6CE8;&#x610F;&#x9700;&#x8981;&#x4E0B;&#x9650;&#x5FC5;&#x987B;&#x662F;0&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x725B;&#x987F;&#x83B1;&#x5E03;&#x5C3C;&#x65AF;&#x516C;&#x5F0F;&#xFF0C;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x5B9A;&#x4E49;&#x57DF;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B9A;&#x7406;&#x8BA1;&#x7B97;&#x5B9A;&#x79EF;&#x5206;&#x5FC5;&#x987B;&#x662F;&#x7B26;&#x5408;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x9700;&#x8981;&#x6309;&#x7167;&#x5B9A;&#x4E49;&#xFF0C;&#x628A;&#x79EF;&#x5206;&#x5207;&#x5272;&#x6210;&#x4E24;&#x4E2A;&#xFF0C;&#x968F;&#x540E;&#x5B8C;&#x6210;&#x8BA1;&#x7B97;</p>
+</li>
+<li><p>&#x8BA1;&#x7B97;&#x5B9A;&#x79EF;&#x5206;&#xFF1A;<strong>&#x533A;&#x95F4;&#x518D;&#x73B0;&#x65B9;&#x6CD5;</strong>&#xFF0C;&#x8BA1;&#x7B97;&#x5B9A;&#x79EF;&#x5206;<script type="math/tex; "> \int_a^bf(x)dx = \int_a^bf(a+b-x)dx  = \frac{1}{2}\int_a^b[f(a+b-x)+f(x)]dx</script>&#xFF0C;&#x7406;&#x8BBA;&#x4F9D;&#x636E;&#x662F;&#xFF0C;&#x4EE4;<script type="math/tex; ">t=a+b-x</script>&#x8FDB;&#x884C;&#x6362;&#x5143;&#xFF0C;&#x5373;&#x53EF;&#x5F97;&#x51FA;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+<li><p>&#x7531;&#x533A;&#x95F4;&#x518D;&#x73B0;&#x7406;&#x8BBA;&#x53EF;&#x4EE5;&#x5F97;&#x51FA;&#xFF0C;<script type="math/tex; ">\forall{f(x)}</script>&#xFF0C;&#x90FD;&#x6709;<script type="math/tex; ">\int_{-a}^af(x)dx = \frac{1}{2}\int_{-a}^a[f(x)+f(-x)]dx = \int_0^a[f(x)+f(-x)]dx</script>&#xFF0C;&#x7406;&#x8BBA;&#x4F9D;&#x636E;&#x662F;<script type="math/tex; ">f(x)+f(-x)</script>&#x5FC5;&#x5B9A;&#x662F;&#x5076;&#x51FD;&#x6570;&#x3002;</p>
+</li>
+<li><p>&#x5B9A;&#x79EF;&#x5206;&#x662F;&#x53D8;&#x9650;&#x79EF;&#x5206;&#x3001;&#x51FD;&#x6570;&#x4E2D;&#x6709;&#x5BFC;&#x6570;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5206;&#x5E03;&#x79EF;&#x5206;</p>
+</li>
+<li><p>&#x6781;&#x5750;&#x6807;&#x56FE;&#x5F62;&#xFF0C;<script type="math/tex; ">1 \pm \cos \theta</script> &#x5FC3;&#x5F62;&#x56FE;&#x3001;<script type="math/tex; ">\cos2\theta</script>&#x53CC;&#x626D;&#x5F62;&#x72B6;</p>
+<p>&#x53C2;&#x6570;&#x65B9;&#x7A0B;&#x4E2D;&#xFF0C;<script type="math/tex; ">1-\sin{t}</script>&#x4E3A;&#x5468;&#x671F;&#x5FAA;&#x73AF;&#x56FE;&#xFF0C;<script type="math/tex; ">\sin{3t}</script>&#x4E3A;&#x56DB;&#x89D2;&#x661F;&#x5F62;</p>
+</li>
+<li><p>&#x5B9A;&#x79EF;&#x5206;&#x7684;&#x5404;&#x4E2A;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5148;&#x753B;&#x51FA;&#x56F4;&#x6210;&#x7684;&#x56FE;&#xFF0C;&#x518D;&#x4ECE;&#x4E2D;&#x627E;&#x51FA;<script type="math/tex; ">x,x+dx</script>&#x6240;&#x7ED8;&#x5236;&#x7684;&#x56FE;&#x5F62;&#xFF0C;&#x518D;&#x8BA1;&#x7B97;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>&#x56FE;&#x5F62;&#x4F53;&#x79EF;&#x3001;&#x5E73;&#x9762;&#x9762;&#x79EF;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x628A;&#x5F27;&#x8FD1;&#x4F3C;&#x4E3A;dx&#xFF0C;</li>
+<li>&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;&#x3001;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;&#xFF0C;&#x5F27;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x7528;dx&#xFF0C;&#x9700;&#x8981;&#x7528;&#x52FE;&#x80A1;&#x5B9A;&#x7406;&#x7B97;&#x51FA;<script type="math/tex; ">ds=\sqrt{d^2x + d^2y}</script></li>
+</ul>
+</li>
+</ol>
+<ol>
+<li>...</li>
+</ol>
+<h2 id="&#x5B9A;&#x4E49;"><a name="&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B9A;&#x4E49;" class="plugin-anchor" href="#&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;</h2>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200705160705890.png" alt="image-20200705160705890"></p>
+<p><script type="math/tex; ">\int_b^af(x)dx = \lim_{n \to  \infty}\sum_{i=0}^n{f(a+\frac{b-a}{n}i) \frac{b-a}{n}}</script></p>
+<ul>
+<li><script type="math/tex; ">\int_0^1f(x)dx = \lim_{n \to  \infty}\sum_{i=0}^n{f(\frac{i}{n}) \frac{1}{n}}</script></li>
+<li><script type="math/tex; ">\int_0^1\sqrt{1-x^2}dx = \frac{\pi}{4}</script> &#x8BE5;&#x79EF;&#x5206;&#x7684;&#x4E0D;&#x5B9A;&#x79EF;&#x5206;&#x4E0D;&#x53EF;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x5B9A;&#x79EF;&#x5206;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x51E0;&#x4F55;&#x6027;&#x8D28;&#x6C42;&#x89E3;&#xFF0C;&#x8FD9;&#x4E2A;&#x79EF;&#x5206;&#x662F;&#x4E00;&#x4E2A;&#x5706;&#xFF0C;&#x800C;0-1&#x533A;&#x95F4;&#xFF0C;&#x5373;&#x4E3A;&#x7B2C;&#x4E00;&#x8C61;&#x9650;&#x7684;&#x56DB;&#x5206;&#x4E4B;&#x4E00;&#x4E2A;&#x5706;&#x7684;&#x9762;&#x79EF;&#x3002;</li>
+</ul>
+<h2 id="&#x6027;&#x8D28;"><a name="&#x6027;&#x8D28;" class="anchor-navigation-ex-anchor" href="#&#x6027;&#x8D28;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6027;&#x8D28;" class="plugin-anchor" href="#&#x6027;&#x8D28;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6027;&#x8D28;</h2>
+<h3 id="&#x53EF;&#x79EF;&#x6027;"><a name="&#x53EF;&#x79EF;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x79EF;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53EF;&#x79EF;&#x6027;" class="plugin-anchor" href="#&#x53EF;&#x79EF;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x79EF;&#x6027;</h3>
+<ol>
+<li>&#x8BBE;<script type="math/tex; ">f(x)</script>&#x5728;<script type="math/tex; ">[a,b]</script>&#x4E0A;&#x53EF;&#x79EF;&#xFF0C;&#x5219; <script type="math/tex; ">f(x)</script>&#x5728;<script type="math/tex; ">[a,b]</script>&#x4E0A;&#x6709;&#x754C;;</li>
+<li>&#x8BBE;<script type="math/tex; ">f(x)</script>&#x5728;<script type="math/tex; ">[a,b]</script>&#x4E0A;&#x8FDE;&#x7EED;&#xFF0C;&#x5219;<script type="math/tex; ">f(x)</script>&#x5728;<script type="math/tex; ">[a,b]</script>&#x4E0A;&#x53EF;&#x79EF;;</li>
+<li>&#x8BBE;<script type="math/tex; ">f(x)</script>&#x5728;<script type="math/tex; ">[a,b]</script>&#x4E0A;&#x6709;&#x754C;&#xFF0C;&#x4E14;&#x53EA;&#x6709;&#x6709;&#x9650;&#x4E2A;&#x95F4;&#x65AD;&#x70B9;&#xFF0C;&#x5219;<script type="math/tex; ">f(x)</script>&#x5728;<script type="math/tex; ">[a,b]</script>&#x4E0A;&#x53EF;&#x79EF;&#x3002;</li>
+</ol>
+<h3 id="&#x57FA;&#x672C;&#x6027;&#x8D28;"><a name="&#x57FA;&#x672C;&#x6027;&#x8D28;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x6027;&#x8D28;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x57FA;&#x672C;&#x6027;&#x8D28;" class="plugin-anchor" href="#&#x57FA;&#x672C;&#x6027;&#x8D28;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x6027;&#x8D28;</h3>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200705170538870.png" alt="image-20200705170538870"></p>
+<h2 id="&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;"><a name="&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;" class="plugin-anchor" href="#&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x5BFC;&#x6570;</h2>
+<ol>
+<li>&#x8BBE;<script type="math/tex; ">f(x)</script>&#x5728;<script type="math/tex; ">[a,b]</script>&#x4E0A;&#x53EF;&#x79EF;&#xFF0C;<script type="math/tex; ">\forall x_0 \in [a,b]</script>&#xFF0C;&#x79F0;<script type="math/tex; ">F(x)=\int_{x_0}^xf(t)dt</script>&#x4E3A;&#x53D8;&#x4E0A;&#x9650;&#x79EF;&#x5206;&#x51FD;&#x6570;</li>
+<li>&#x8BBE;<script type="math/tex; ">f(x)</script>&#x5728;&#x4E0A;<script type="math/tex; ">[a,b]</script>&#x53EF;&#x79EF;&#xFF0C;&#x5219;<script type="math/tex; ">F(x)=\int_{x_0}^xf(t)dt</script>&#x5728;&#x4E0A;<script type="math/tex; ">[a,b]</script>&#x8FDE;&#x7EED;</li>
+<li>&#x8BBE;<script type="math/tex; ">f(x)</script>&#x5728;&#x4E0A;<script type="math/tex; ">[a,b]</script>&#x8FDE;&#x7EED;&#xFF0C;&#x5219;<script type="math/tex; ">F(x)=\int_{x_0}^xf(t)dt</script>&#x5728;&#x4E0A;<script type="math/tex; ">[a,b]</script>&#x53EF;&#x5BFC;&#xFF0C;&#x4E14;<script type="math/tex; ">F'(x)=f(x)</script>&#x3002;</li>
+<li><script type="math/tex; ">f(x)</script>&#x8FDE;&#x7EED;&#x4E14;&#x662F;&#x5947;(&#x5076;)&#x51FD;&#x6570;&#xFF0C;&#x5219;<script type="math/tex; ">F(x)=\int_0^xf(t)dt</script> &#x662F;&#x5076;(&#x5947;)&#x51FD;&#x6570;&#x3002;</li>
+</ol>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200705175102789.png" alt="image-20200705175102789"></p>
+<h2 id="&#x8BA1;&#x7B97;"><a name="&#x8BA1;&#x7B97;" class="anchor-navigation-ex-anchor" href="#&#x8BA1;&#x7B97;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8BA1;&#x7B97;" class="plugin-anchor" href="#&#x8BA1;&#x7B97;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BA1;&#x7B97;</h2>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200705225008084.png" alt="image-20200705225008084"></p>
+<h2 id="&#x8BC1;&#x660E;&#x9898;"><a name="&#x8BC1;&#x660E;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x8BC1;&#x660E;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8BC1;&#x660E;&#x9898;" class="plugin-anchor" href="#&#x8BC1;&#x660E;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BC1;&#x660E;&#x9898;</h2>
+<ol>
+<li><p>&#x91CD;&#x8981;&#x7ED3;&#x8BBA;&#xFF1A;&#x67EF;&#x897F;&#x4E0D;&#x7B49;&#x5F0F;&#xFF1A;<script type="math/tex; ">[\int_a^bf(x)g(x)dx]^2 \le \int_a^bf^2(x)dx \int_a^bg^2(x)dx</script></p>
+<p>&#xFF08;&#x5728;&#x4F8B;&#x9898;&#x4E2D;&#x6709;&#x8BC1;&#x660E;&#x8FC7;&#x7A0B;&#xFF0C;&#x901A;&#x8FC7;&#x5E38;&#x6570;&#x53D8;&#x91CF;&#x6CD5;+&#x5BFC;&#x6570;+&#x5355;&#x8C03;&#x6027; &#x5B8C;&#x6210;&#xFF09;</p>
+</li>
+<li><p>&#x79EF;&#x5206;&#x5185;&#x6CA1;&#x6709;&#x5BFC;&#x6570;&#xFF0C;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x62C9;&#x683C;&#x6717;&#x65E5;</p>
+</li>
+<li><p>&#x79EF;&#x5206;&#x5185;&#x6709;&#x5BFC;&#x6570;&#xFF0C;&#x8003;&#x8651;&#x4F7F;&#x7528;NL&#x516C;&#x5F0F;</p>
+</li>
+<li><p>...</p>
+</li>
+</ol>
+<h2 id="&#x53CD;&#x5E38;&#x79EF;&#x5206;"><a name="&#x53CD;&#x5E38;&#x79EF;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x53CD;&#x5E38;&#x79EF;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53CD;&#x5E38;&#x79EF;&#x5206;" class="plugin-anchor" href="#&#x53CD;&#x5E38;&#x79EF;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53CD;&#x5E38;&#x79EF;&#x5206;</h2>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707102815592.png" alt="image-20200707102815592"></p>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707102830209.png" alt="image-20200707102830209"></p>
+<ol>
+<li>&#x79EF;&#x5206;&#x5B58;&#x5728;&#xFF0C;&#x79EF;&#x5206;&#x6536;&#x655B;&#xFF0C;&#x5426;&#x5219;&#x79F0;&#x53D1;&#x6563;</li>
+<li>&#x7455;&#x70B9;&#x5373;&#x4E3A;&#xFF0C;<script type="math/tex; ">f(x)</script>&#x65E0;&#x754C;&#xFF0C;&#x6CE8;&#x610F;&#x4E0D;&#x662F;&#x539F;&#x51FD;&#x6570;</li>
+<li>...</li>
+</ol>
+<h2 id="&#x5E94;&#x7528;"><a name="&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E94;&#x7528;" class="plugin-anchor" href="#&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;</h2>
+<h3 id="&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;"><a name="&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;" class="anchor-navigation-ex-anchor" href="#&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;" class="plugin-anchor" href="#&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E73;&#x9762;&#x56FE;&#x5F62;&#x7684;&#x9762;&#x79EF;</h3>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707153637062.png" alt="image-20200707153637062"></p>
+<p>&#x5E38;&#x89C1;&#x6781;&#x5750;&#x6807;&#x56FE;&#x5F62;&#x753B;&#x6CD5;</p>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707160009163.png" alt="image-20200707160009163"></p>
+<h3 id="&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;"><a name="&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;" class="anchor-navigation-ex-anchor" href="#&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;" class="plugin-anchor" href="#&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65CB;&#x8F6C;&#x4F53;&#x7684;&#x4F53;&#x79EF;</h3>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707153711428.png" alt="image-20200707153711428"></p>
+<h3 id="&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;"><a name="&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;" class="plugin-anchor" href="#&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x5E73;&#x5747;&#x503C;</h3>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707153740965.png" alt="image-20200707153740965.png"></p>
+<h3 id="&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;"><a name="&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;" class="anchor-navigation-ex-anchor" href="#&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;" class="plugin-anchor" href="#&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E73;&#x9762;&#x66F2;&#x7EBF;&#x7684;&#x5F27;&#x957F;</h3>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707153808648.png" alt="image-20200707153808648"></p>
+<h3 id="&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;"><a name="&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;" class="anchor-navigation-ex-anchor" href="#&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;" class="plugin-anchor" href="#&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65CB;&#x8F6C;&#x66F2;&#x9762;&#x7684;&#x9762;&#x79EF;</h3>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200707153830882.png" alt="image-20200707153830882"></p>
+<h3 id="&#x7269;&#x7406;&#x5E94;&#x7528;"><a name="&#x7269;&#x7406;&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x7269;&#x7406;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7269;&#x7406;&#x5E94;&#x7528;" class="plugin-anchor" href="#&#x7269;&#x7406;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7269;&#x7406;&#x5E94;&#x7528;</h3>
+<ol>
+<li><p>&#x66F2;&#x7EBF;&#x7684;&#x5F62;&#x5FC3;<script type="math/tex; ">=\frac{\int xds}{\int 1ds}</script></p>
+<p>&#x66F2;&#x9762;&#x5F62;&#x5FC3;=<script type="math/tex; ">\frac{\int x(f(x)-g(x))dx}{\int (f(x)-g(x))dx}</script></p>
+</li>
+<li><p>&#x5706;&#x9525;&#x7684;&#x8868;&#x9762;&#x79EF; <script type="math/tex; ">=\pi r L(母线长，即为斜边长)</script></p>
+</li>
+<li><p>&#x7269;&#x4F53;&#x91CD;&#x91CF;<script type="math/tex; ">=mg=qgh</script></p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="indefinite-integral.html" class="navigation navigation-prev " aria-label="Previous page: 不定积分">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Multivariate-differential-equation.html" class="navigation navigation-next " aria-label="Next page: 多元微分方程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"定积分","level":"1.3.5","depth":2,"next":{"title":"多元微分方程","level":"1.3.6","depth":2,"path":"Math/Multivariate-differential-equation.md","ref":"Math/Multivariate-differential-equation.md","articles":[]},"previous":{"title":"不定积分","level":"1.3.4","depth":2,"path":"Math/indefinite-integral.md","ref":"Math/indefinite-integral.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","code","click-reveal","prism","search-plus","hide-element","-sharing","sharing-plus","simple-page-toc","emphasize","graph","expandable-chapters-small","anchors","splitter","insert-logo","ace","copy-code-button","anchor-navigation-ex","mathjax","autotheme","favicon","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":""},"emphasize":{},"ace":{},"github":{"url":"https://github.com/SmartLyu/LearnForDegree"},"simple-page-toc":{},"splitter":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"graph":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":1},"click-reveal":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"images/logo.ico","bookmark":"images/logo.ico","appleTouch":"images/logo.ico","appleTouchMore":{"120x120":"images/logo.ico","180x180":"images/logo.ico"}},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[21,22,23,0,1,2,3,4,4,5],"sepia":[5,7,8,17,18,19],"white":[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},"sharing":{"facebook":true,"twitter":true,"google":true,"qq":true,"qzone":true,"weibo":true,"all":["facebook","messenger","google","twitter","weibo","qq","linkedin","qzone","line"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 30px","url":"https://smartlyu.github.io/degree-html/images/logo.png"},"search-plus":{}},"theme":"default","author":"于志远","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"备考硕士笔记","language":"zh-hans","gitbook":"*","description":"记录考研备考复习中的知识点"},"file":{"path":"Math/Definite-integral.md","mtime":"2020-07-07T16:51:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-07T16:51:56.749Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-autotheme/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
