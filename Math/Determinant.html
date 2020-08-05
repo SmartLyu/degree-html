@@ -558,6 +558,8 @@
 </li>
 <li><p><script type="math/tex; ">范德蒙行列式=第二行的每列与向前的每个元素的差相乘</script></p>
 </li>
+<li><p><script type="math/tex; ">主对角线行列式(主对角线都为a，其他元素都是b) = [a+b(n-1)] (a-b)^{n-1}</script></p>
+</li>
 <li><p>..</p>
 </li>
 </ol>
@@ -636,17 +638,19 @@
 <li><p>&#x4E0A;(&#x4E0B;)&#x4E09;&#x89D2;&#x884C;&#x5217;&#x5F0F;&#x7684;&#x503C;</p>
 <ul>
 <li><script type="math/tex; ">上(下)三角行列式的值 = 主对角线元素的乘积</script></li>
-<li>&#x4E3B;&#x5BF9;&#x89D2;&#x7EBF;&#x5168;&#x4E3A;a&#xFF0C;&#x5176;&#x4ED6;&#x90FD;&#x662F;b&#xFF0C;&#x5176;&#x5176;&#x7B49;&#x7EA7;&#x7ED3;&#x679C;&#x4E3A;<script type="math/tex; ">\begin{vmatrix}a & b & b &...& b \\\\b & a & b & ... & b \\\\ ...& ... &  ... & ... & ... \\\\ b & b & b &...& a\end{vmatrix}=[a+(n-1)b](a-b)^{n-1}</script></li>
 </ul>
-<p><img src="https://smartlyu.github.io/degree-html/images/image-20200730225912294.png" alt="image-20200730225912294"></p>
 </li>
+</ol>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200730225912294.png" alt="image-20200730225912294"></p>
+<ol>
 <li><p>&#x526F;&#x5BF9;&#x89D2;&#x7EBF;&#x7684;&#x4E0A;(&#x4E0B;)&#x4E09;&#x89D2;&#x884C;&#x5217;&#x5F0F;</p>
 <ul>
 <li><script type="math/tex; ">副对角线的上(下)三角行列式 = (-1)^{\frac{n(n-1)}{2}} . 副对角线元素的乘积</script></li>
-<li>&#x526F;&#x5BF9;&#x89D2;&#x7EBF;&#x5168;&#x4E3A;a&#xFF0C;&#x5176;&#x4ED6;&#x90FD;&#x662F;b&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x4E3A;<script type="math/tex; ">(-1)^{\frac{n(n-1)}{2}}[a+(n-1)b](a-b)^{n-1}</script></li>
 </ul>
-<p><img src="https://smartlyu.github.io/degree-html/images/image-20200730225932266.png" alt="image-20200730225932266"></p>
 </li>
+</ol>
+<p><img src="https://smartlyu.github.io/degree-html/images/image-20200730225932266.png" alt="image-20200730225932266"></p>
+<ol>
 <li><p>&#x62C9;&#x666E;&#x62C9;&#x65AF;&#x5C55;&#x5F00;&#x5F0F;</p>
 <ul>
 <li><script type="math/tex; ">拉普拉斯行列式(行列式中左下或右上全是0) = 主对角线上两个行列式块的乘积</script></li>
@@ -669,6 +673,14 @@
 <li>&#x5316;&#x7B80;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;<script type="math/tex; ">第二行的每列与向前的每个元素的差相乘</script></li>
 </ul>
 <p><img src="https://smartlyu.github.io/degree-html/images/image-20200730230059711.png" alt="image-20200730230059711" style="zoom:67%;"></p>
+</li>
+<li><p>&#x4E3B;&#x5BF9;&#x89D2;&#x7EBF;&#x884C;&#x5217;&#x5F0F;</p>
+<ul>
+<li>&#x8BC1;&#x660E;&#x65B9;&#x6CD5;&#xFF1A;&#x628A;&#x6BCF;&#x5217;&#x5143;&#x7D20;&#x90FD;&#x52A0;&#x5230;&#x7B2C;&#x4E00;&#x884C;&#xFF0C;&#x63D0;&#x51FA;&#x516C;&#x56E0;&#x5F0F;&#xFF0C;&#x518D;&#x7528;&#x7B2C;&#x4E00;&#x884C;*b&#xFF0C;&#x51CF;&#x5230;&#x4E0B;&#x9762;&#x6BCF;&#x4E00;&#x884C;&#xFF0C;&#x5373;&#x53EF;&#x5F97;&#x51FA;&#x4E0A;&#x4E09;&#x89D2;&#x884C;&#x5217;&#x5F0F;</li>
+<li>&#x4E3B;&#x5BF9;&#x89D2;&#x7EBF;&#x5168;&#x4E3A;a&#xFF0C;&#x5176;&#x4ED6;&#x90FD;&#x662F;b&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x4E3A;<script type="math/tex; ">[a+b(n-1)] (a-b)^{n-1}</script></li>
+<li>&#x526F;&#x5BF9;&#x89D2;&#x7EBF;&#x5168;&#x4E3A;a&#xFF0C;&#x5176;&#x4ED6;&#x90FD;&#x662F;b&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x4E3A;<script type="math/tex; ">(-1)^{\frac{n(n-1)}{2}}[a+(n-1)b](a-b)^{n-1}</script></li>
+</ul>
+<p><script type="math/tex; ">\begin{vmatrix}a & b & b &...& b \\\\b & a & b & ... & b \\\\ ...& ... &  ... & ... & ... \\\\ b & b & b &...& a\end{vmatrix} = [a+b(n-1)] (a-b)^{n-1}</script></p>
 </li>
 <li><p>...</p>
 </li>
@@ -783,7 +795,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"线代-行列式","level":"1.3.8","depth":2,"next":{"title":"线代-矩阵及其运算","level":"1.3.9","depth":2,"path":"Math/Matrix.md","ref":"Math/Matrix.md","articles":[]},"previous":{"title":"重积分","level":"1.3.7","depth":2,"path":"Math/Re-integration.md","ref":"Math/Re-integration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","code","click-reveal","prism","search-plus","hide-element","-sharing","sharing-plus","simple-page-toc","emphasize","graph","expandable-chapters-small","anchors","splitter","insert-logo","ace","copy-code-button","anchor-navigation-ex","mathjax","autotheme","favicon","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":""},"emphasize":{},"ace":{},"github":{"url":"https://github.com/SmartLyu/LearnForDegree"},"simple-page-toc":{},"splitter":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"graph":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":1},"click-reveal":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"images/logo.ico","bookmark":"images/logo.ico","appleTouch":"images/logo.ico","appleTouchMore":{"120x120":"images/logo.ico","180x180":"images/logo.ico"}},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[21,22,23,0,1,2,3,4,4,5],"sepia":[5,7,8,17,18,19],"white":[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},"sharing":{"facebook":true,"twitter":true,"google":true,"qq":true,"qzone":true,"weibo":true,"all":["facebook","messenger","google","twitter","weibo","qq","linkedin","qzone","line"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 30px","url":"https://smartlyu.github.io/degree-html/images/logo.png"},"search-plus":{}},"theme":"default","author":"于志远","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"备考硕士笔记","language":"zh-hans","gitbook":"*","description":"记录考研备考复习中的知识点"},"file":{"path":"Math/Determinant.md","mtime":"2020-08-04T06:18:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-04T06:18:26.613Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"线代-行列式","level":"1.3.8","depth":2,"next":{"title":"线代-矩阵及其运算","level":"1.3.9","depth":2,"path":"Math/Matrix.md","ref":"Math/Matrix.md","articles":[]},"previous":{"title":"重积分","level":"1.3.7","depth":2,"path":"Math/Re-integration.md","ref":"Math/Re-integration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","code","click-reveal","prism","search-plus","hide-element","-sharing","sharing-plus","simple-page-toc","emphasize","graph","expandable-chapters-small","anchors","splitter","insert-logo","ace","copy-code-button","anchor-navigation-ex","mathjax","autotheme","favicon","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":""},"emphasize":{},"ace":{},"github":{"url":"https://github.com/SmartLyu/LearnForDegree"},"simple-page-toc":{},"splitter":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"graph":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":1},"click-reveal":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"images/logo.ico","bookmark":"images/logo.ico","appleTouch":"images/logo.ico","appleTouchMore":{"120x120":"images/logo.ico","180x180":"images/logo.ico"}},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[21,22,23,0,1,2,3,4,4,5],"sepia":[5,7,8,17,18,19],"white":[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},"sharing":{"facebook":true,"twitter":true,"google":true,"qq":true,"qzone":true,"weibo":true,"all":["facebook","messenger","google","twitter","weibo","qq","linkedin","qzone","line"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 30px","url":"https://smartlyu.github.io/degree-html/images/logo.png"},"search-plus":{}},"theme":"default","author":"于志远","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"备考硕士笔记","language":"zh-hans","gitbook":"*","description":"记录考研备考复习中的知识点"},"file":{"path":"Math/Determinant.md","mtime":"2020-08-05T15:26:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-05T15:26:40.333Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
